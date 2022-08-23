@@ -2,7 +2,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayerInputField = document.getElementById('per-player-input');
     const perPlayerInputString = perPlayerInputField.value;
     const perPlayerInput = parseFloat(perPlayerInputString);
-    const getPlayerNumberField = document.getElementById('selected-players');
+    const getPlayerNumberField = document.getElementById('selected-player-ol');
     const getPlayerNumber = getPlayerNumberField.childNodes.length - 1;
     const totalNeedPerPlayer = getPlayerNumber * perPlayerInput;
     const totalPlayerExpensesField = document.getElementById('all-player-expenses');
